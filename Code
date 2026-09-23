@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main ()
+{
+  float a,b,c,d,e, marks;
+  printf("Enter marks of Physics:");
+  scanf("%f", &a);
+  printf("Enter marks of Maths:");
+  scanf("%f", &b);
+  printf("Enter marks of CSE:");
+  scanf("%f", &c);
+  printf("Enter marks of Chemistery:");
+  scanf("%f", &d);
+  printf("Enter marks of Electronics:");
+  scanf("%f", &e);
+  marks = (((a+b+c+d+e)/500)*100);
+  if (a>=101)
+  {
+    printf("Invalid marks of Physics entered");
+  }
+  else if (b>=101)
+  {
+    printf("Invalid marks of Maths entered");
+  }
+  else if (c>=101)
+  {
+    printf("Invalid marks of CSE entered");
+  }
+  else if (d>=101)
+  {
+    printf("Invalid marks of Chemistery entered");
+  }
+  else if (e>=101)
+  {
+    printf("Invalid marks of Electronics entered");
+  }
+  else if (marks >= 90)
+  {
+    printf("Percentage obtained:%f,Grade: A",marks);
+  }
+  else if (marks >= 80)
+  {
+    printf("Percentage obtained:%f,Grade: B",marks);
+  }
+  else if(marks >= 50)
+  {
+    printf("Percentage obtained:%f,Grade: E",marks);
+  }
+  else if(marks <= 50)
+  {
+    printf("Percentage obtained:%f,Grade: F",marks);
+  }
+  return 0;
+}
