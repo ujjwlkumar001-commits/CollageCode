@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main ()
+{
+  int c;
+  float a,b,sum,sub,mul,divi,result;
+  printf("Enter 1st number:");
+  scanf("%f", &a);
+  printf("Enter 2nd number:");
+  scanf("%f", &b);
+  printf("Select from option-\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n");
+  scanf("%d", &c);
+  if (c == 1)
+  {
+    sum = (a+b);
+    printf("Sum is %f",sum);
+  }
+  else if (c == 2)
+  {
+    sub = (a-b);
+    printf("Subtraction is %f", sub);
+  }
+  else if (c == 3)
+  {
+    mul = (a*b);
+    printf("Multiplication is %f", mul);
+  }
+  else if (c == 4)
+  {
+    if (b == 0)
+    {
+      printf("2nd number can't be 0 for division.");
+    }
+    else 
+    {
+      divi= (a/b);
+      printf("Division %f", divi);
+    }
+  }
+  return 0;
+}
