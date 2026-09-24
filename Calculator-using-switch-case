@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main ()
+{
+  int c;
+  float a,b,sum,sub,mul,divi,r;
+  printf("Enter 1st number:");
+  scanf("%f", &a);
+  printf("Enter 2nd number:");
+  scanf("%f", &b);
+  printf("Select from option-\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n");
+  scanf("%d", &c);
+  switch(c)
+  {
+    case 1: 
+     r=(a+b);
+     printf("Result is:%f", r);
+    break;
+    case 2: 
+     r=(a-b);
+     printf("Result is:%f", r);
+    break;
+    case 3: 
+     r=(a*b);
+     printf("Result is:%f", r);
+    break;
+    case 4:
+     if (b == 0)
+     {
+      printf("B can't be 0 for division.");
+     } 
+     else 
+     {
+      r=(a/b);
+      printf("Result is:%f", r);
+     }
+    break;
+    default: printf("Invalid key");
+ }
+ return 0;
+}
