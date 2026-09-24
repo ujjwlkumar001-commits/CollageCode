@@ -1,0 +1,33 @@
+#include<stdio.h>
+int  main ()
+{
+  float h,e,m,p,c;
+  float marks;
+  printf("Enter marks of English:");
+  scanf("%f",&e);
+  printf("Enter marks of Hindi:");
+  scanf("%f",&h);
+  printf("Enter marks of Maths:");
+  scanf("%f",&m);
+  printf("Enter marks of Physics:");
+  scanf("%f",&p);
+  printf("Enter marks of Chemistery:");
+  scanf("%f",&c);
+  marks = (((h+e+m+p+c)/500)*100);
+  switch ((int)marks/10)
+  {
+    case 10:
+    case 9: printf("Grade:A.Marks is:%f", marks);
+    break;
+    case 8: printf("Grade:B.Marks is:%f", marks);
+    break;
+    case 7: printf("Grade:C.Marks is:%f" , marks);
+    break;
+    case 6: printf("Grade:D.Marks is:%f", marks);
+    break;
+    case 5: printf("Grade:E.Marks is:%f", marks);
+    break;
+    default: printf("Grade:F.Marks is less than 50.");
+  }
+  return 0;
+}
